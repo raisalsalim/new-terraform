@@ -69,7 +69,7 @@ jobs:
           push: true
 
       - name: Deploy to EC2
-        uses: appleboy/ssh-action@v0.1.5
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
