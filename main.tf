@@ -58,8 +58,8 @@ resource "aws_instance" "web" {
   connection {
     type        = "ssh"
     user        = "ubuntu"  # User for connecting to the EC2 instance
-    private_key = file("/path/to/CI-CD.pem")  # Path to your SSH private key file
-    host        = self.public_ip  # Use self.public_ip to dynamically fetch the public IP of the instance
+    private_key = file("/home/raisal/Downloads/CI-CD.pem")  # Path to your SSH private key file
+    host        = 54.70.59.223  # Use the public IP of the instance
   }
 
   provisioner "remote-exec" {
